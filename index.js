@@ -21,7 +21,7 @@ module.exports = (opts = {}) => {
   let output = opts.output || 'inc/editor-color-palette.json';
 
   return {
-    postcssPlugin: 'postcss-understrap-palette-generator',
+    postcssPlugin: 'postcss-tipaplayer-palette-generator',
     prepare (result) {
       return {
         Declaration (decl) {
