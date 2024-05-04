@@ -1,17 +1,16 @@
-# PostCSS Understrap Palette Generator
+# PostCSS Tip A Player Palette Generator
 
-[PostCSS] plugin to generate a json file of your Bootstrap color variables. This is a dependency for the [Understrap] open source WordPress theme framework. We're then digesting this JSON file to populate Gutenberg with theme colors that actually match your designs.
+[PostCSS] plugin to generate a json file of your Bootstrap color variables. This is a dependency for the TAP open source WordPress theme framework. We're then digesting this JSON file to populate Gutenberg with theme colors that actually match your designs.
 
 [PostCSS]: https://github.com/postcss/postcss
 
-[Understrap]: https://github.com/understrap/understrap
 
 ## Usage
 
 **Step 1:** Install plugin:
 
 ```sh
-npm install --save-dev https://github.com/bacoords/postcss-understrap-palette-generator
+npm install --save-dev https://github.com/cypherjones/postcss-tipaplayer-palette-generator.git
 ```
 
 **Step 2:** Check you project for existed PostCSS config: `postcss.config.js`
@@ -27,7 +26,7 @@ and set this plugin in settings.
 module.exports = {
   plugins: [
     autoprefixer : {}
-+   'postcss-understrap-palette-generator':{},
++   'postcss-tipaplayer-palette-generator':{},
   ]
 }
 ```
@@ -41,7 +40,7 @@ Pass default values for variables that may or may not be in your Bootstrap's var
 module.exports = {
   plugins: [
     autoprefixer : {}
-    'postcss-understrap-palette-generator':{
+    'postcss-tipaplayer-palette-generator':{
 +     defaults: {
 +       "--magenta": "#ff00ff"
 +     }
@@ -57,7 +56,7 @@ An array of color variables you explicitly want the tool to parse from your CSS 
 module.exports = {
   plugins: [
     autoprefixer : {}
-    'postcss-understrap-palette-generator':{
+    'postcss-tipaplayer-palette-generator':{
 +     colors: [
 +       "--primary"
 +     ]
@@ -73,7 +72,7 @@ The name of the JSON file you explicitly want the tool to save the parsed colors
 module.exports = {
   plugins: [
     autoprefixer : {}
-    'postcss-understrap-palette-generator':{
+    'postcss-tipaplayer-palette-generator':{
 +     output: 'example/example-file.json'
     },
   ]

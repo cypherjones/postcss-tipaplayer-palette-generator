@@ -1,5 +1,5 @@
 {
-  "name": "postcss-understrap-palette-generator",
+  "name": "postcss-tipapalayer-palette-generator",
   "version": "0.1.1",
   "description": "PostCSS plugin to generate a json file for Understrap theme",
   "keywords": [
@@ -11,9 +11,9 @@
   "scripts": {
     "test": "jest --coverage && eslint ."
   },
-  "author": "Brian Coords <bacoords@gmail.com>",
+  "author": "AJ Jones <ajjonez@icloud.com>",
   "license": "MIT",
-  "repository": "bacoords/postcss-understrap-palette-generator",
+  "repository": "cypherjones/postcss-tipaplayer-palette-generator",
   "engines": {
     "node": ">=10.0.0"
   },
